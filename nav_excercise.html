@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav Bar</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        background-color: var(--bodycolor);
+        margin: 10px;
+      }
+      :root {
+        --bodycolor: rgb(150, 150, 213);
+        --navcolor: rgb(23, 230, 230);
+        --navfontcolor: rgb(212, 18, 18);
+      }
+      .box {
+        background-color: var(--navcolor);
+        color: rgb(225, 79, 79);
+        position: sticky;
+        top: 0px;
+      }
+      li {
+        list-style: none;
+        padding: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        position: sticky;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+      }
+      @media screen and (max-width: 455px) {
+        ul {
+          flex-direction: column;
+        }
+        .foot {
+          font-size: small;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: var(--navfontcolor);
+      }
+      .container {
+        background-color: rgb(168, 188, 228);
+        border: 8px solid rgb(209, 209, 230);
+        border-radius: 8px;
+        margin: 10px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+      }
+      .sect {
+        border: 2px solid black;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 5px;
+        height: 25vh;
+        width: 25vw;
+        overflow: scroll;
+        border-radius: 8px;
+        box-shadow: 2px 3px 6px 0px blue;
+      }
+      /* .sect:hover{
+        width: 30vw;
+        height: 30vh;
+        transition: 0.1s ease-in-out;
+        overflow: auto;
+      } */
+      p::selection {
+        color: rgb(161, 218, 232);
+        background-color: black;
+      }
+      .foot {
+        background-color: black;
+        color: white;
+        padding: 8px;
+        position: relative;
+        top: 80vh;
+        font-size: larger;
+        display: flex;
+        justify-content: center;
+      }
+      .color {
+        margin: 20px;
+        background-color: beige;
+        font-size: x-large;
+        border: 4px solid blueviolet;
+        border-radius: 10px;
+        display: inline;
+        padding: 20px;
+        border-radius: 10px;
+        display: grid;
+        justify-content: center;
+      }
+      .image {
+        position: fixed;
+        left: 95vw;
+        top: 90vh;
+        z-index: 1;
+      }
+      .sect:first-child {
+        background-color: rgb(205, 177, 231);
+      }
+      .sect:nth-child(2) {
+        background-color: rgb(118, 244, 202);
+      }
+      .sect1 {
+        border: 3px solid rgb(239, 155, 155);
+      }
+      .sect2 {
+        border: 3px solid rgb(239, 155, 155);
+      }
+      .sect3 {
+        border: 3px solid rgb(239, 155, 155);
+      }
+      .sect4 {
+        border: 3px solid rgb(239, 155, 155);
+      }
+      pre{
+        font-size: larger;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <ul>
+        <li><a href="port.html">Home</a></li>
+        <li><a href="/">Contact</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">SignOut</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <section class="sect sect1">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+          necessitatibus suscipit totam cupiditate, modi eaque laborum
+          repudiandae magnam quidem perferendis rerum possimus? Voluptatem,
+          soluta ipsum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+          laudantium cum iusto minus temporibus consequuntur aliquam aperiam
+          quasi obcaecati corrupti expedita officiis incidunt animi sed, ipsa
+          beatae maxime, ducimus a? Soluta ex ipsum magnam alias voluptatum fuga
+          voluptates, qui harum.
+        </p>
+      </section>
+      <section class="sect sect2">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum est,
+          ipsam voluptatem at numquam cumque ea commodi nobis, officiis nulla
+          laboriosam laudantium qui voluptatum illo.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          earum, ratione facere ipsum itaque, magnam voluptatibus minus minima
+          reiciendis incidunt quam fugit fugiat. Dignissimos laudantium corporis
+          excepturi optio consectetur possimus provident soluta voluptatum iusto
+          ea quam quas, laboriosam, maxime fugit.
+        </p>
+      </section>
+    </div>
+    <div class="container">
+      <section class="sect sect3">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+          necessitatibus suscipit totam cupiditate, modi eaque laborum
+          repudiandae magnam quidem perferendis rerum possimus? Voluptatem,
+          soluta ipsum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+          laudantium cum iusto minus temporibus consequuntur aliquam aperiam
+          quasi obcaecati corrupti expedita officiis incidunt animi sed, ipsa
+          beatae maxime, ducimus a? Soluta ex ipsum magnam alias voluptatum fuga
+          voluptates, qui harum.
+        </p>
+      </section>
+      <section class="sect sect4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum est,
+          ipsam voluptatem at numquam cumque ea commodi nobis, officiis nulla
+          laboriosam laudantium qui voluptatum illo.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          earum, ratione facere ipsum itaque, magnam voluptatibus minus minima
+          reiciendis incidunt quam fugit fugiat. Dignissimos laudantium corporis
+          excepturi optio consectetur possimus provident soluta voluptatum iusto
+          ea quam quas, laboriosam, maxime fugit.
+        </p>
+      </section>
+    </div>
+    <div class="color">
+      <pre>
+      Welcome to Sigma 
+Web Development Course Express</pre
+      >
+    </div>
+    <div class="image">
+      <img src="web_dev.png.jpg" alt="Web_Dev_Logo" height="40" width="40" />
+    </div>
+    <div class="foot">
+      <footer>
+        All &copy; rights are reserved. 2025 Akshaykumar WebDeveloper.
+      </footer>
+    </div>
+  </body>
+</html>
